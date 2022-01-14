@@ -1,0 +1,25 @@
+.Header {
+  height: 806px;
+  padding-top: 64px;
+  background-color: #eff0f2;
+}
+
+.Header .Header__title {
+  margin-top: 192px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 59px;
+  color: #505050;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.24);
+}
+
+.Header .Header__title>.Header__em {
+  display: inline-block;
+  padding: 0 11px;
+  font-style: inherit;
+  background-color: #b2f2ee;
+}
+

@@ -1,0 +1,15 @@
+.Works {
+    height: 1165px;
+    padding-top: 115px;
+    padding-bottom: 123px;
+    background-color: #fff;
+}
+
+.Works .Works__gallery {
+    margin-top: 122px;
+}
+
+.Works .Works__gallery--item {
+    width: 370px;
+    height: 359px;
+}

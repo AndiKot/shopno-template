@@ -1,0 +1,28 @@
+.Menu__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    cursor: pointer;
+}
+
+.Menu__button .Menu__button-bar {
+    width: 30px;
+    height: 4px;
+    background-color: #606061;
+    border-radius: 2px;
+    transition: all 0.7s ease-in;
+    /*transform-origin: top left;*/
+}
+
+.Menu__button-bar--opened:nth-of-type(2) {
+    width: 0;
+}
+
+.Menu__button-bar--opened:first-of-type {
+    transform: rotateZ(45deg);
+}
+
+.Menu__button-bar--opened:last-of-type {
+    transform: rotateZ(-45deg);
+}

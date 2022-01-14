@@ -1,0 +1,10 @@
+.AboutUs {
+    height: 984px;
+    padding-top: 120px;
+    padding-bottom: 113px;
+    background-color: #f8fafa;
+}
+
+.AboutUs .AboutUs__carousel {
+    margin-top: 148px;
+}

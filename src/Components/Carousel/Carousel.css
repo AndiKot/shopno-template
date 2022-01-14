@@ -1,0 +1,19 @@
+.Carousel {
+    width: 100%;
+}
+
+.Carousel__item {
+    height: 485px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gray;
+}
+
+.Carousel__item-img {
+
+}
+
+.Carousel__item-description {
+
+}

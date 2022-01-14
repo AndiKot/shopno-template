@@ -1,0 +1,16 @@
+.Footer {
+    margin-top: 116px;
+}
+
+.Footer .Footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 122px;
+}
+
+.Footer .social{
+    max-width: 100vw;
+    padding-top: 93px;
+    padding-bottom: 89px;
+    background-color: #262b2e;
+}
