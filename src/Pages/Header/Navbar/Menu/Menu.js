@@ -1,26 +1,32 @@
 import React, {useState} from "react";
+import {createUseStyles} from "react-jss";
 import MenuButton from "./MenuButton/MenuButton";
-
-import "./Menu.css";
 
 // function menuButtonHandler() {
 //
 // }
 
+const useStyles = createUseStyles({
+    Menu: {
+
+    },
+});
+
 function createMenu() {
 
 }
 
-function Menu(props) {
+const Menu = ({...props}) => {
     let [isOpened, setIsOpened] = useState(false);
 
+    const classes = useStyles();
     // const {menuList} = props;
 
     // const menu = isOpened
 
     return (
         isOpened
-            ? <nav className={"Menu"}>
+            ? <nav className={classes.Menu}>
                 <MenuButton clickHandler={() => {
                     setIsOpened(!isOpened);
                     console.log(isOpened);

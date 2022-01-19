@@ -1,24 +1,32 @@
 import React from 'react';
+import {createUseStyles} from "react-jss";
 import Section from "../../Components/Section/Section";
 import PageTitle from "../../Components/PageTitle/PageTitle";
-import {importAll} from "../../utils/importImages";
 import Gallery from "../../Components/Gallery/Gallery";
 import ServiceInfo from "./ServiceInfo/ServiceInfo";
-import './MostServices.css';
+import {serviceImages} from "./serviceImages";
 
-const serviceDescriptions =[
+const useStyles = createUseStyles({
+    MostServices: {
+        paddingTop: 125,
+        paddingBottom: 122,
+    },
+    MostServices__gallery: {
+        marginTop: 124,
+        padding: '0 15px',
+    },
+});
 
-];
+const MostServices = ({...props}) => {
+    const servicesItems = serviceImages
+        .map((item) => <ServiceInfo key={item} backgroundImage={item}></ServiceInfo>);
 
+    const classes = useStyles();
 
-function MostServices(props) {
-    const servicesItems = importAll(require.context('../../img/mostService', false, /\.(png|jpe?g|svg)$/))
-        .map((item, index) => <ServiceInfo key={item} backgroundImage={item}></ServiceInfo>);
-    console.log(servicesItems);
     return (
-        <Section className={"MostServices"}>
+        <Section className={classes.MostServices}>
             <PageTitle title={"Our services"} titleDescription={"Lorem ipsum dolor sit amet event landing template"}/>
-            <Gallery className={"MostServices__gallery"}>
+            <Gallery className={classes.MostServices__gallery}>
                 {servicesItems}
             </Gallery>
         </Section>

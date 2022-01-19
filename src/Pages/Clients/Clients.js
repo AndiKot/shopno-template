@@ -1,12 +1,20 @@
 import React from 'react';
-
-import './Clients.css';
+import {createUseStyles} from "react-jss";
 import Section from "../../Components/Section/Section";
+
 import clientsBackground from "../../img/Logos.jpg";
 
-function Clients(props) {
+const useStyles = createUseStyles({
+    Clients: {
+        marginTop: 119,
+        height: 268,
+    },
+});
+
+const Clients = ({...props}) => {
+    const classes = useStyles();
     return (
-        <Section className={"Clients"} style={{backgroundImage: `url(${clientsBackground})`}}>
+        <Section className={classes.Clients} style={{backgroundImage: `url(${clientsBackground})`}}>
 
         </Section>
     );

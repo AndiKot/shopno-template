@@ -1,10 +1,22 @@
 import React from 'react';
+import {createUseStyles} from "react-jss";
 
-import './Gallery.css';
+const useStyles = createUseStyles({
+    Gallery: {
+        width: 1170,
+        flexWrap: 'wrap',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignContent: 'space-between',
+        // gap: 15,
+        alignItems: 'center',
+    },
+});
 
-function Gallery(props) {
+const Gallery = ({...props}) => {
+    const classes = useStyles();
     return (
-        <div className={`Gallery ${props.className}`}>
+        <div className={`${classes.Gallery} ${props.className}`}>
             {props.children}
         </div>
     );

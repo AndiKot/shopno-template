@@ -1,13 +1,21 @@
 import React from "react";
+import {createUseStyles} from "react-jss";
 import Menu from "./Menu/Menu";
 
-import "./Navbar.css";
+const useStyles = createUseStyles({
+    Navbar: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+    }
+});
 
-function Navbar(props) {
-    const {logo} = props;
+const Navbar = ({logo, ...props}) => {
+    const classes = useStyles();
 
     return (
-        <div className={"Navbar"}>
+        <div className={classes.Navbar}>
             <a href="#">
                 <img src={logo} alt="Logo"/>
             </a>
