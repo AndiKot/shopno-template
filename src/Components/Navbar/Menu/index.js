@@ -7,11 +7,15 @@ const Menu = () => {
         menu,
         menuItems,
         menuItem,
+        menuItemActive,
     } = useStyles();
 
     return (
         <nav className={menu}>
             <ul className={menuItems}>
+                <li className={menuItem}>
+                    <NavLink to="/">Home</NavLink>
+                </li>
                 <li className={menuItem}>
                     <NavLink to="about">About Us</NavLink>
                 </li>

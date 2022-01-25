@@ -10,13 +10,11 @@ import Clients from "./Pages/Clients";
 import Footer from "./Pages/Footer";
 import MainContent from "./Components/MainContent";
 
-import background from "./img/Header-Bg.jpg";
-
 function App() {
     return (
         <MainContent>
             <Routes>
-                <Route path="/" element={<Header background={background} />}/>
+                <Route path="/" element={<Header/>}/>
                 <Route path='/about' element={<AboutUs/>}/>
                 <Route path="/works" element={<Works/>}/>
                 <Route path="/services" element={<MostServices/>}/>

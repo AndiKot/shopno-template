@@ -24,7 +24,6 @@ export const useStyles = createUseStyles({
         fontWeight: 500,
         lineHeight: '42px',
         color: 'rgba(0, 0, 0, 0.7)',
-        textTransform: 'uppercase',
         borderBottom: `1px solid ${color('#71f6eb').alpha(0.5).darken(0.7)}`,
         borderTopLeftRadius: 3,
         borderTopRightRadius: 3,
@@ -47,6 +46,9 @@ export const useStyles = createUseStyles({
         // '&:active': {
         //     transform: 'translateY(-3px)',
         // },
+    },
+    menuItemActive: {
+        borderBottomWidth: 4,
     },
     '@media (max-width: 1199px)': {
         menuItem: {
