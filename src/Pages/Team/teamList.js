@@ -9,7 +9,7 @@ export const teamList = [
     {
         imageUrl: teamMember1,
         name: 'Claire Davis',
-        occupation: '/ UI/UX Designer',
+        job: '/ UI/UX Designer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
@@ -22,7 +22,7 @@ export const teamList = [
     {
         imageUrl: teamMember2,
         name: 'Patrice N\'Kunku',
-        occupation: '/ UI Designer',
+        job: '/ UI Designer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
@@ -35,7 +35,7 @@ export const teamList = [
     {
         imageUrl: teamMember3,
         name: 'Bjorn Olsen',
-        occupation: '/ Web Developer',
+        job: '/ Web Developer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
@@ -48,7 +48,7 @@ export const teamList = [
     {
         imageUrl: teamMember4,
         name: 'Connor Gerrard',
-        occupation: '/ Web Designer',
+        job: '/ Web Designer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
@@ -61,7 +61,7 @@ export const teamList = [
     {
         imageUrl: teamMember5,
         name: 'Lisa Devlin',
-        occupation: '/ UI/UX Designer',
+        job: '/ UI/UX Designer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
@@ -74,7 +74,7 @@ export const teamList = [
     {
         imageUrl: teamMember6,
         name: 'Clarissa Davis',
-        occupation: '/ Web Designer',
+        job: '/ Web Designer',
         description: 'Lorem Ipsum is not simply is  an action designer random text\n' +
             'It has roots in a piece. ',
         socials: {
